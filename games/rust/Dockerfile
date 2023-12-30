@@ -40,7 +40,7 @@ RUN			dpkg --add-architecture i386 \
 			&& useradd -d /home/container -m container
 
 USER 		container
-ENV  		USER=container HOME=/home/container
+ENV  		USER=container HOME=/home/container/setver/rust
 
 WORKDIR 	/home/container
 
